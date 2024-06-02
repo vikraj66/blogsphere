@@ -7333,7 +7333,7 @@ const renderUserList = ()=>{
     }
 };
 
-},{"primora-js":"htb1u","../models/User":"4rcHn","@parcel/transformer-js/src/esmodule-helpers.js":"f2zUu","../views/User/UserList":"42mFk","../views/User/UserEdit":"fVikd","../views/Test":"cfg2J","../views/Blog/register":"dWtYB"}],"4rcHn":[function(require,module,exports) {
+},{"primora-js":"htb1u","../models/User":"4rcHn","../views/User/UserList":"42mFk","../views/User/UserEdit":"fVikd","../views/Test":"cfg2J","../views/Blog/register":"dWtYB","@parcel/transformer-js/src/esmodule-helpers.js":"f2zUu"}],"4rcHn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "User", ()=>User);
