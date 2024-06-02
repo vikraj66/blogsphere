@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body and html take up full height */
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Styles for the container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Styles for the content */
+.content {
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.google-signup {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.google-signup img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-signup:hover {
+
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the image */
+.illustration {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .illustration {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 50%;
+        /* Adjust as needed */
+    }
+
+    .content {
+        margin-left: 40px;
+    }
+}
+
+/* Overlay styles */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity as needed */
+    z-index: 1;
+    display: none;
+    /* Hidden by default */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .overlay {
+        display: block;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .google-signup {
+        justify-content: center;
+        max-width: 70%;
+        /* Ensure the button has a proper width */
+    }
+}

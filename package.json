@@ -11,10 +11,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "primora-js": "^1.2.8"
+    "primora-js": "^1.3.9"
   },
   "devDependencies": {
     "buffer": "^6.0.3",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
     "typescript": "^5.4.5"
   }
 }
